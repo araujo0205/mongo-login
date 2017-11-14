@@ -1,0 +1,17 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+    
+index:
+    path: /
+    defaults: { _controller: AppBundle:Index:Index }
+dashboard:
+    path: /dashboard
+    defaults: { _controller: AppBundle:Dashboard:index }
+
+# Acesso
+login:
+    path: /login
+    defaults: { _controller: AppBundle:Login:Index }
+logout:
+    path: /logout

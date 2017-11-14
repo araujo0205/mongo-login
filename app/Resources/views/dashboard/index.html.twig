@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+         Ola, {{ app.user.name }}.  
+         <a href="{{ path('logout') }}">sair</a>
+    </body>
+</html>
