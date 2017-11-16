@@ -4,9 +4,6 @@ app:
     
 index:
     path: /
-    defaults: { _controller: AppBundle:Index:Index }
-dashboard:
-    path: /dashboard
     defaults: { _controller: AppBundle:Dashboard:index }
 
 # Acesso
